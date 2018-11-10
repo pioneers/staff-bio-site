@@ -15,5 +15,10 @@
   <%= @user.bio %>
 </p>
 
+<p>
+  <strong>Created At:</strong>
+  <%= @user.created_at.in_time_zone('Pacific Time (US & Canada)') %>
+</p>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
